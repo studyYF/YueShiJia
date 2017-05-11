@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C31F8981EC1CAA100FDAD11 /* YFHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8971EC1CAA100FDAD11 /* YFHomeItem.swift */; };
+		3C31F89A1EC29CF100FDAD11 /* YFConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8991EC29CF100FDAD11 /* YFConst.swift */; };
+		3C31F89C1EC29E6400FDAD11 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F89B1EC29E6400FDAD11 /* Size.swift */; };
+		3C31F89F1EC2F97000FDAD11 /* YFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F89E1EC2F97000FDAD11 /* YFNavigationController.swift */; };
+		3C31F8A11EC2F97F00FDAD11 /* YFTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8A01EC2F97F00FDAD11 /* YFTabBarViewController.swift */; };
+		3C31F8A31EC2F9C700FDAD11 /* YFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8A21EC2F9C700FDAD11 /* YFHomeViewController.swift */; };
+		3C31F8A51EC2F9D600FDAD11 /* YFSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8A41EC2F9D600FDAD11 /* YFSubjectViewController.swift */; };
+		3C31F8A71EC2F9E100FDAD11 /* YFShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8A61EC2F9E100FDAD11 /* YFShopViewController.swift */; };
+		3C31F8A91EC2F9F100FDAD11 /* YFBasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8A81EC2F9F100FDAD11 /* YFBasketViewController.swift */; };
+		3C31F8AB1EC2F9FA00FDAD11 /* YFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8AA1EC2F9FA00FDAD11 /* YFProfileViewController.swift */; };
+		3C31F8AD1EC3F3FE00FDAD11 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8AC1EC3F3FE00FDAD11 /* UIImage+Color.swift */; };
 		3CC5820F1EC1A47500B5A176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5820E1EC1A47500B5A176 /* AppDelegate.swift */; };
 		3CC582111EC1A47500B5A176 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC582101EC1A47500B5A176 /* ViewController.swift */; };
 		3CC582141EC1A47500B5A176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC582121EC1A47500B5A176 /* Main.storyboard */; };
@@ -14,6 +25,7 @@
 		3CC582191EC1A47500B5A176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC582171EC1A47500B5A176 /* LaunchScreen.storyboard */; };
 		3CC582241EC1A47500B5A176 /* YueShiJiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC582231EC1A47500B5A176 /* YueShiJiaTests.swift */; };
 		3CC5822F1EC1A47500B5A176 /* YueShiJiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5822E1EC1A47500B5A176 /* YueShiJiaUITests.swift */; };
+		3CC582561EC1A92600B5A176 /* YFHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC582551EC1A92600B5A176 /* YFHttpRequest.swift */; };
 		8CEDB485F8E3103D241B12EC /* Pods_YueShiJiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78DCA750933704DDB46B5C8 /* Pods_YueShiJiaUITests.framework */; };
 		C385B8AD09F2E0E62ED14A2A /* Pods_YueShiJiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E3BBDAB92B5EBB25305EED /* Pods_YueShiJiaTests.framework */; };
 		D16447A433731537E3D7C45F /* Pods_YueShiJia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110A0B2D1D08D9E8DF28A8D4 /* Pods_YueShiJia.framework */; };
@@ -39,6 +51,17 @@
 /* Begin PBXFileReference section */
 		0F3462DE2C1C845C9C09E524 /* Pods-YueShiJiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YueShiJiaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YueShiJiaUITests/Pods-YueShiJiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		110A0B2D1D08D9E8DF28A8D4 /* Pods_YueShiJia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YueShiJia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C31F8971EC1CAA100FDAD11 /* YFHomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFHomeItem.swift; sourceTree = "<group>"; };
+		3C31F8991EC29CF100FDAD11 /* YFConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFConst.swift; sourceTree = "<group>"; };
+		3C31F89B1EC29E6400FDAD11 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		3C31F89E1EC2F97000FDAD11 /* YFNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFNavigationController.swift; sourceTree = "<group>"; };
+		3C31F8A01EC2F97F00FDAD11 /* YFTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFTabBarViewController.swift; sourceTree = "<group>"; };
+		3C31F8A21EC2F9C700FDAD11 /* YFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFHomeViewController.swift; sourceTree = "<group>"; };
+		3C31F8A41EC2F9D600FDAD11 /* YFSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFSubjectViewController.swift; sourceTree = "<group>"; };
+		3C31F8A61EC2F9E100FDAD11 /* YFShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFShopViewController.swift; sourceTree = "<group>"; };
+		3C31F8A81EC2F9F100FDAD11 /* YFBasketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFBasketViewController.swift; sourceTree = "<group>"; };
+		3C31F8AA1EC2F9FA00FDAD11 /* YFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFProfileViewController.swift; sourceTree = "<group>"; };
+		3C31F8AC1EC3F3FE00FDAD11 /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		3CC5820B1EC1A47500B5A176 /* YueShiJia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YueShiJia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5820E1EC1A47500B5A176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CC582101EC1A47500B5A176 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +75,7 @@
 		3CC5822A1EC1A47500B5A176 /* YueShiJiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YueShiJiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5822E1EC1A47500B5A176 /* YueShiJiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YueShiJiaUITests.swift; sourceTree = "<group>"; };
 		3CC582301EC1A47500B5A176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CC582551EC1A92600B5A176 /* YFHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFHttpRequest.swift; sourceTree = "<group>"; };
 		3DB780B930276CFFB39DEDAA /* Pods-YueShiJiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YueShiJiaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YueShiJiaTests/Pods-YueShiJiaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5049084C3E1F5969640C8074 /* Pods-YueShiJiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YueShiJiaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YueShiJiaTests/Pods-YueShiJiaTests.release.xcconfig"; sourceTree = "<group>"; };
 		646DA04B87D7C2AE1D411804 /* Pods-YueShiJia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YueShiJia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YueShiJia/Pods-YueShiJia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C31F89D1EC2F95800FDAD11 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3C31F89E1EC2F97000FDAD11 /* YFNavigationController.swift */,
+				3C31F8A01EC2F97F00FDAD11 /* YFTabBarViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		3CC582021EC1A47500B5A176 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +147,7 @@
 		3CC5820D1EC1A47500B5A176 /* YueShiJia */ = {
 			isa = PBXGroup;
 			children = (
+				3CC5823E1EC1A8E700B5A176 /* Classes */,
 				3CC5820E1EC1A47500B5A176 /* AppDelegate.swift */,
 				3CC582101EC1A47500B5A176 /* ViewController.swift */,
 				3CC582121EC1A47500B5A176 /* Main.storyboard */,
@@ -140,6 +174,200 @@
 				3CC582301EC1A47500B5A176 /* Info.plist */,
 			);
 			path = YueShiJiaUITests;
+			sourceTree = "<group>";
+		};
+		3CC5823E1EC1A8E700B5A176 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3C31F89D1EC2F95800FDAD11 /* Main */,
+				3CC582401EC1A8E700B5A176 /* Home */,
+				3CC582501EC1A8E700B5A176 /* Subject */,
+				3CC582481EC1A8E700B5A176 /* Shop */,
+				3CC5824C1EC1A8E700B5A176 /* ShoppingBasket */,
+				3CC582441EC1A8E700B5A176 /* Profile */,
+				3CC5823F1EC1A8E700B5A176 /* Category */,
+				3CC582541EC1A8E700B5A176 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3CC5823F1EC1A8E700B5A176 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3C31F89B1EC29E6400FDAD11 /* Size.swift */,
+				3C31F8AC1EC3F3FE00FDAD11 /* UIImage+Color.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3CC582401EC1A8E700B5A176 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3CC582411EC1A8E700B5A176 /* Controllers */,
+				3CC582421EC1A8E700B5A176 /* Models */,
+				3CC582431EC1A8E700B5A176 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3CC582411EC1A8E700B5A176 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C31F8A21EC2F9C700FDAD11 /* YFHomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3CC582421EC1A8E700B5A176 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C31F8971EC1CAA100FDAD11 /* YFHomeItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CC582431EC1A8E700B5A176 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CC582441EC1A8E700B5A176 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3CC582451EC1A8E700B5A176 /* Controllers */,
+				3CC582461EC1A8E700B5A176 /* Models */,
+				3CC582471EC1A8E700B5A176 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3CC582451EC1A8E700B5A176 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C31F8AA1EC2F9FA00FDAD11 /* YFProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3CC582461EC1A8E700B5A176 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CC582471EC1A8E700B5A176 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CC582481EC1A8E700B5A176 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				3CC582491EC1A8E700B5A176 /* Controllers */,
+				3CC5824A1EC1A8E700B5A176 /* Models */,
+				3CC5824B1EC1A8E700B5A176 /* Views */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		3CC582491EC1A8E700B5A176 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C31F8A61EC2F9E100FDAD11 /* YFShopViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3CC5824A1EC1A8E700B5A176 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CC5824B1EC1A8E700B5A176 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CC5824C1EC1A8E700B5A176 /* ShoppingBasket */ = {
+			isa = PBXGroup;
+			children = (
+				3CC5824D1EC1A8E700B5A176 /* Controllers */,
+				3CC5824E1EC1A8E700B5A176 /* Models */,
+				3CC5824F1EC1A8E700B5A176 /* Views */,
+			);
+			path = ShoppingBasket;
+			sourceTree = "<group>";
+		};
+		3CC5824D1EC1A8E700B5A176 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C31F8A81EC2F9F100FDAD11 /* YFBasketViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3CC5824E1EC1A8E700B5A176 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CC5824F1EC1A8E700B5A176 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CC582501EC1A8E700B5A176 /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				3CC582511EC1A8E700B5A176 /* Controllers */,
+				3CC582521EC1A8E700B5A176 /* Models */,
+				3CC582531EC1A8E700B5A176 /* Views */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
+		3CC582511EC1A8E700B5A176 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C31F8A41EC2F9D600FDAD11 /* YFSubjectViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3CC582521EC1A8E700B5A176 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CC582531EC1A8E700B5A176 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CC582541EC1A8E700B5A176 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3CC582551EC1A92600B5A176 /* YFHttpRequest.swift */,
+				3C31F8991EC29CF100FDAD11 /* YFConst.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		57301CE43B2C809C60385390 /* Frameworks */ = {
@@ -236,6 +464,7 @@
 		3CC582031EC1A47500B5A176 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YF;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = YangFan;
@@ -447,8 +676,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C31F89A1EC29CF100FDAD11 /* YFConst.swift in Sources */,
+				3C31F8A11EC2F97F00FDAD11 /* YFTabBarViewController.swift in Sources */,
+				3C31F8AB1EC2F9FA00FDAD11 /* YFProfileViewController.swift in Sources */,
+				3C31F8A51EC2F9D600FDAD11 /* YFSubjectViewController.swift in Sources */,
+				3C31F8A91EC2F9F100FDAD11 /* YFBasketViewController.swift in Sources */,
+				3C31F8AD1EC3F3FE00FDAD11 /* UIImage+Color.swift in Sources */,
 				3CC582111EC1A47500B5A176 /* ViewController.swift in Sources */,
 				3CC5820F1EC1A47500B5A176 /* AppDelegate.swift in Sources */,
+				3C31F8A71EC2F9E100FDAD11 /* YFShopViewController.swift in Sources */,
+				3C31F89F1EC2F97000FDAD11 /* YFNavigationController.swift in Sources */,
+				3C31F8A31EC2F9C700FDAD11 /* YFHomeViewController.swift in Sources */,
+				3C31F8981EC1CAA100FDAD11 /* YFHomeItem.swift in Sources */,
+				3C31F89C1EC29E6400FDAD11 /* Size.swift in Sources */,
+				3CC582561EC1A92600B5A176 /* YFHttpRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,6 +948,7 @@
 				3CC582351EC1A47500B5A176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CC582361EC1A47500B5A176 /* Build configuration list for PBXNativeTarget "YueShiJiaTests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +957,7 @@
 				3CC582381EC1A47500B5A176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CC582391EC1A47500B5A176 /* Build configuration list for PBXNativeTarget "YueShiJiaUITests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +966,7 @@
 				3CC5823B1EC1A47500B5A176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
