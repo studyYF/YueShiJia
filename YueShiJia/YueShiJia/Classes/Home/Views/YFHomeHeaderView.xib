@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="YFHomeHeaderView" id="iN0-l3-epB" customClass="YFHomeHeaderView" customModule="YueShiJia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDb-eD-lKz" customClass="SDCycleScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Qw-K4-EbB">
+                    <rect key="frame" x="0.0" y="189" width="375" height="111"/>
+                    <subviews>
+                        <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucp-XT-bVA" customClass="YFHomeButton" customModule="YueShiJia" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="8.5" width="94" height="94"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Ucp-XT-bVA" secondAttribute="height" multiplier="1:1" id="wH5-zP-Vbz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectedCategory:" destination="iN0-l3-epB" eventType="touchUpInside" id="LSg-6H-AjL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yj4-O5-6G3" customClass="YFHomeButton" customModule="YueShiJia" customModuleProvider="target">
+                            <rect key="frame" x="94" y="8.5" width="94" height="94"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectedCategory:" destination="iN0-l3-epB" eventType="touchUpInside" id="EkH-Am-VE4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="934-Bf-b2H" customClass="YFHomeButton" customModule="YueShiJia" customModuleProvider="target">
+                            <rect key="frame" x="282" y="8.5" width="94" height="94"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectedCategory:" destination="iN0-l3-epB" eventType="touchUpInside" id="gQg-pz-pWI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAe-XM-CCF" customClass="YFHomeButton" customModule="YueShiJia" customModuleProvider="target">
+                            <rect key="frame" x="188" y="8.5" width="94" height="94"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectedCategory:" destination="iN0-l3-epB" eventType="touchUpInside" id="cfg-PW-OPm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sAe-XM-CCF" firstAttribute="height" secondItem="Ucp-XT-bVA" secondAttribute="height" id="3gE-6a-V2u"/>
+                        <constraint firstItem="yj4-O5-6G3" firstAttribute="leading" secondItem="Ucp-XT-bVA" secondAttribute="trailing" id="5hO-KE-H09"/>
+                        <constraint firstItem="Ucp-XT-bVA" firstAttribute="centerY" secondItem="3Qw-K4-EbB" secondAttribute="centerY" id="8gu-Lr-0Zz"/>
+                        <constraint firstItem="934-Bf-b2H" firstAttribute="height" secondItem="Ucp-XT-bVA" secondAttribute="height" id="B3p-eR-rT4"/>
+                        <constraint firstItem="yj4-O5-6G3" firstAttribute="height" secondItem="Ucp-XT-bVA" secondAttribute="height" id="L6c-LL-khb"/>
+                        <constraint firstItem="934-Bf-b2H" firstAttribute="centerY" secondItem="Ucp-XT-bVA" secondAttribute="centerY" id="OA8-to-05i"/>
+                        <constraint firstItem="934-Bf-b2H" firstAttribute="leading" secondItem="sAe-XM-CCF" secondAttribute="trailing" id="Oyl-AP-J19"/>
+                        <constraint firstItem="yj4-O5-6G3" firstAttribute="width" secondItem="Ucp-XT-bVA" secondAttribute="width" id="Tcs-xE-Bs7"/>
+                        <constraint firstItem="Ucp-XT-bVA" firstAttribute="leading" secondItem="3Qw-K4-EbB" secondAttribute="leading" id="UuZ-zS-jvr"/>
+                        <constraint firstItem="yj4-O5-6G3" firstAttribute="centerY" secondItem="Ucp-XT-bVA" secondAttribute="centerY" id="ek4-K7-nQi"/>
+                        <constraint firstItem="934-Bf-b2H" firstAttribute="width" secondItem="Ucp-XT-bVA" secondAttribute="width" id="gi9-IW-J3O"/>
+                        <constraint firstItem="sAe-XM-CCF" firstAttribute="centerY" secondItem="Ucp-XT-bVA" secondAttribute="centerY" id="izJ-jv-V5a"/>
+                        <constraint firstItem="Ucp-XT-bVA" firstAttribute="width" secondItem="3Qw-K4-EbB" secondAttribute="width" multiplier="0.25" id="r5a-Ub-odE"/>
+                        <constraint firstItem="sAe-XM-CCF" firstAttribute="leading" secondItem="yj4-O5-6G3" secondAttribute="trailing" id="rmw-uP-eau"/>
+                        <constraint firstItem="sAe-XM-CCF" firstAttribute="width" secondItem="Ucp-XT-bVA" secondAttribute="width" id="tVw-k4-iop"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zDb-eD-lKz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bit-BP-zRt"/>
+                <constraint firstItem="zDb-eD-lKz" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.63" id="BtX-hh-gky"/>
+                <constraint firstAttribute="trailing" secondItem="zDb-eD-lKz" secondAttribute="trailing" id="Hri-5U-54S"/>
+                <constraint firstAttribute="bottom" secondItem="3Qw-K4-EbB" secondAttribute="bottom" id="Mb6-KI-Ayn"/>
+                <constraint firstItem="zDb-eD-lKz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TMf-4E-4bF"/>
+                <constraint firstItem="3Qw-K4-EbB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g9o-Vy-OXO"/>
+                <constraint firstAttribute="trailing" secondItem="3Qw-K4-EbB" secondAttribute="trailing" id="gBs-Jq-7Ss"/>
+                <constraint firstItem="3Qw-K4-EbB" firstAttribute="top" secondItem="zDb-eD-lKz" secondAttribute="bottom" id="mrZ-Dd-OXF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="categoryFourButton" destination="934-Bf-b2H" id="e7O-nb-Oms"/>
+                <outlet property="categoryOneButton" destination="Ucp-XT-bVA" id="ElQ-NT-GNL"/>
+                <outlet property="categoryThreeButton" destination="sAe-XM-CCF" id="xDx-gP-Q82"/>
+                <outlet property="categoryTwoButton" destination="yj4-O5-6G3" id="7n1-ZZ-R4u"/>
+                <outlet property="imageScrollView" destination="zDb-eD-lKz" id="3zi-6G-a6l"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+</document>

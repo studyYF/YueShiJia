@@ -18,6 +18,17 @@
 		3C31F8A91EC2F9F100FDAD11 /* YFBasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8A81EC2F9F100FDAD11 /* YFBasketViewController.swift */; };
 		3C31F8AB1EC2F9FA00FDAD11 /* YFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8AA1EC2F9FA00FDAD11 /* YFProfileViewController.swift */; };
 		3C31F8AD1EC3F3FE00FDAD11 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8AC1EC3F3FE00FDAD11 /* UIImage+Color.swift */; };
+		3C31F8B01EC430D800FDAD11 /* YFHomeTypeOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8AE1EC430D800FDAD11 /* YFHomeTypeOneCell.swift */; };
+		3C31F8B11EC430D800FDAD11 /* YFHomeTypeOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C31F8AF1EC430D800FDAD11 /* YFHomeTypeOneCell.xib */; };
+		3C31F8BC1EC4311D00FDAD11 /* YFItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8BA1EC4311D00FDAD11 /* YFItemCollectionCell.swift */; };
+		3C31F8BD1EC4311D00FDAD11 /* YFItemCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C31F8BB1EC4311D00FDAD11 /* YFItemCollectionCell.xib */; };
+		3C31F8BF1EC4313500FDAD11 /* YFHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8BE1EC4313500FDAD11 /* YFHomeHeaderView.swift */; };
+		3C31F8C71EC4470A00FDAD11 /* YFHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C31F8C61EC4470A00FDAD11 /* YFHomeHeaderView.xib */; };
+		3C31F8CE1EC44CC600FDAD11 /* YFHomeTypeTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8CC1EC44CC600FDAD11 /* YFHomeTypeTwoCell.swift */; };
+		3C31F8CF1EC44CC600FDAD11 /* YFHomeTypeTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C31F8CD1EC44CC600FDAD11 /* YFHomeTypeTwoCell.xib */; };
+		3C31F8D21EC44CE100FDAD11 /* YFHomeTypeThreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8D01EC44CE100FDAD11 /* YFHomeTypeThreeCell.swift */; };
+		3C31F8D31EC44CE100FDAD11 /* YFHomeTypeThreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C31F8D11EC44CE100FDAD11 /* YFHomeTypeThreeCell.xib */; };
+		3C31F8D51EC45B2300FDAD11 /* YFHomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8D41EC45B2300FDAD11 /* YFHomeButton.swift */; };
 		3CC5820F1EC1A47500B5A176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5820E1EC1A47500B5A176 /* AppDelegate.swift */; };
 		3CC582111EC1A47500B5A176 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC582101EC1A47500B5A176 /* ViewController.swift */; };
 		3CC582141EC1A47500B5A176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC582121EC1A47500B5A176 /* Main.storyboard */; };
@@ -62,6 +73,18 @@
 		3C31F8A81EC2F9F100FDAD11 /* YFBasketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFBasketViewController.swift; sourceTree = "<group>"; };
 		3C31F8AA1EC2F9FA00FDAD11 /* YFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFProfileViewController.swift; sourceTree = "<group>"; };
 		3C31F8AC1EC3F3FE00FDAD11 /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
+		3C31F8AE1EC430D800FDAD11 /* YFHomeTypeOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFHomeTypeOneCell.swift; sourceTree = "<group>"; };
+		3C31F8AF1EC430D800FDAD11 /* YFHomeTypeOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFHomeTypeOneCell.xib; sourceTree = "<group>"; };
+		3C31F8BA1EC4311D00FDAD11 /* YFItemCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFItemCollectionCell.swift; sourceTree = "<group>"; };
+		3C31F8BB1EC4311D00FDAD11 /* YFItemCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFItemCollectionCell.xib; sourceTree = "<group>"; };
+		3C31F8BE1EC4313500FDAD11 /* YFHomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFHomeHeaderView.swift; sourceTree = "<group>"; };
+		3C31F8C51EC4410400FDAD11 /* YueShiJia-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YueShiJia-Bridging-header.h"; sourceTree = "<group>"; };
+		3C31F8C61EC4470A00FDAD11 /* YFHomeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFHomeHeaderView.xib; sourceTree = "<group>"; };
+		3C31F8CC1EC44CC600FDAD11 /* YFHomeTypeTwoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFHomeTypeTwoCell.swift; sourceTree = "<group>"; };
+		3C31F8CD1EC44CC600FDAD11 /* YFHomeTypeTwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFHomeTypeTwoCell.xib; sourceTree = "<group>"; };
+		3C31F8D01EC44CE100FDAD11 /* YFHomeTypeThreeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFHomeTypeThreeCell.swift; sourceTree = "<group>"; };
+		3C31F8D11EC44CE100FDAD11 /* YFHomeTypeThreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFHomeTypeThreeCell.xib; sourceTree = "<group>"; };
+		3C31F8D41EC45B2300FDAD11 /* YFHomeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFHomeButton.swift; sourceTree = "<group>"; };
 		3CC5820B1EC1A47500B5A176 /* YueShiJia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YueShiJia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5820E1EC1A47500B5A176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CC582101EC1A47500B5A176 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +148,7 @@
 		3CC582021EC1A47500B5A176 = {
 			isa = PBXGroup;
 			children = (
+				3C31F8C51EC4410400FDAD11 /* YueShiJia-Bridging-header.h */,
 				3CC5820D1EC1A47500B5A176 /* YueShiJia */,
 				3CC582221EC1A47500B5A176 /* YueShiJiaTests */,
 				3CC5822D1EC1A47500B5A176 /* YueShiJiaUITests */,
@@ -196,6 +220,7 @@
 			children = (
 				3C31F89B1EC29E6400FDAD11 /* Size.swift */,
 				3C31F8AC1EC3F3FE00FDAD11 /* UIImage+Color.swift */,
+				3C31F8D41EC45B2300FDAD11 /* YFHomeButton.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -229,6 +254,16 @@
 		3CC582431EC1A8E700B5A176 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3C31F8AE1EC430D800FDAD11 /* YFHomeTypeOneCell.swift */,
+				3C31F8AF1EC430D800FDAD11 /* YFHomeTypeOneCell.xib */,
+				3C31F8CC1EC44CC600FDAD11 /* YFHomeTypeTwoCell.swift */,
+				3C31F8CD1EC44CC600FDAD11 /* YFHomeTypeTwoCell.xib */,
+				3C31F8D01EC44CE100FDAD11 /* YFHomeTypeThreeCell.swift */,
+				3C31F8D11EC44CE100FDAD11 /* YFHomeTypeThreeCell.xib */,
+				3C31F8BA1EC4311D00FDAD11 /* YFItemCollectionCell.swift */,
+				3C31F8BB1EC4311D00FDAD11 /* YFItemCollectionCell.xib */,
+				3C31F8BE1EC4313500FDAD11 /* YFHomeHeaderView.swift */,
+				3C31F8C61EC4470A00FDAD11 /* YFHomeHeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -511,8 +546,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C31F8BD1EC4311D00FDAD11 /* YFItemCollectionCell.xib in Resources */,
+				3C31F8C71EC4470A00FDAD11 /* YFHomeHeaderView.xib in Resources */,
+				3C31F8D31EC44CE100FDAD11 /* YFHomeTypeThreeCell.xib in Resources */,
 				3CC582191EC1A47500B5A176 /* LaunchScreen.storyboard in Resources */,
 				3CC582161EC1A47500B5A176 /* Assets.xcassets in Resources */,
+				3C31F8B11EC430D800FDAD11 /* YFHomeTypeOneCell.xib in Resources */,
+				3C31F8CF1EC44CC600FDAD11 /* YFHomeTypeTwoCell.xib in Resources */,
 				3CC582141EC1A47500B5A176 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,6 +718,7 @@
 			files = (
 				3C31F89A1EC29CF100FDAD11 /* YFConst.swift in Sources */,
 				3C31F8A11EC2F97F00FDAD11 /* YFTabBarViewController.swift in Sources */,
+				3C31F8CE1EC44CC600FDAD11 /* YFHomeTypeTwoCell.swift in Sources */,
 				3C31F8AB1EC2F9FA00FDAD11 /* YFProfileViewController.swift in Sources */,
 				3C31F8A51EC2F9D600FDAD11 /* YFSubjectViewController.swift in Sources */,
 				3C31F8A91EC2F9F100FDAD11 /* YFBasketViewController.swift in Sources */,
@@ -685,8 +726,13 @@
 				3CC582111EC1A47500B5A176 /* ViewController.swift in Sources */,
 				3CC5820F1EC1A47500B5A176 /* AppDelegate.swift in Sources */,
 				3C31F8A71EC2F9E100FDAD11 /* YFShopViewController.swift in Sources */,
+				3C31F8BC1EC4311D00FDAD11 /* YFItemCollectionCell.swift in Sources */,
+				3C31F8BF1EC4313500FDAD11 /* YFHomeHeaderView.swift in Sources */,
 				3C31F89F1EC2F97000FDAD11 /* YFNavigationController.swift in Sources */,
+				3C31F8D51EC45B2300FDAD11 /* YFHomeButton.swift in Sources */,
+				3C31F8D21EC44CE100FDAD11 /* YFHomeTypeThreeCell.swift in Sources */,
 				3C31F8A31EC2F9C700FDAD11 /* YFHomeViewController.swift in Sources */,
+				3C31F8B01EC430D800FDAD11 /* YFHomeTypeOneCell.swift in Sources */,
 				3C31F8981EC1CAA100FDAD11 /* YFHomeItem.swift in Sources */,
 				3C31F89C1EC29E6400FDAD11 /* Size.swift in Sources */,
 				3CC582561EC1A92600B5A176 /* YFHttpRequest.swift in Sources */,
@@ -850,6 +896,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YueShiJia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "YueShiJia-Bridging-header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -866,6 +914,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YueShiJia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "YueShiJia-Bridging-header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

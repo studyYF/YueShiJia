@@ -27,3 +27,6 @@ let kSuccessCode: Int = 200
 
 /// 主色调
 let kColor = UIColor(hue:0.10, saturation:0.37, brightness:0.81, alpha:1.00)
+
+/// 比例
+let kRate: CGFloat = kWidth / 375.00

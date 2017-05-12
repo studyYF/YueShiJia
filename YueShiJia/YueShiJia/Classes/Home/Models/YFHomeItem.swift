@@ -12,7 +12,8 @@ import SwiftyJSON
 
 /// 产品
 class YFHomeItem: NSObject {
-
+    
+    var advertUrl: String?
     
     var relation_id: String?
 
@@ -64,7 +65,12 @@ class YFHomeItem: NSObject {
         relation_index_img = dict["relation_index_img"] as? String
         relation_index_font = dict["relation_index_font"] as? String
         relation_sort = dict["relation_sort"] as? String
-        relation_object_type = dict["relation_object_type"] as? String
+        if let type = (dict["relation_object_type"] as? String) {
+            relation_object_type = type
+        } else {
+            let type = dict["relation_object_type"] as! Int
+            relation_object_type = "\(type)"
+        }
         relation_state = dict["relation_state"] as? String
         relation_object_jingle = dict["relation_object_jingle"] as? String
         relation_end_time = dict["relation_end_time"] as? String
@@ -73,6 +79,7 @@ class YFHomeItem: NSObject {
         goods_storage = dict["goods_storage"] as? String
         if_favorites = dict["if_favorites"] as? Int
         no_market = dict["no_market"] as? Int
+        advertUrl = dict["advertUrl"] as? String
         if let array = dict["goods_special_list"] as? NSArray {
             goods_special_list = [Goods_Special_List]()
             for good in array {
