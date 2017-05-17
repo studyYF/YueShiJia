@@ -27,10 +27,10 @@ class YFHomeTypeThreeCell: UITableViewCell {
     
     var item: YFHomeItem? {
         didSet {
-            goodImgv.kf.setImage(with: URL(string: (item?.relation_object_image)!))
+            goodImgv.kf.setImage(with: URL(string: (item?.relation_object_image)!),placeholder: UIImage(named: "bg_loding_defalut"))
             goodsNameLabel.text = item?.relation_object_title
             goodDesLabel.text = item?.relation_object_jingle
-            priceButton.setTitle("￥\((item?.goods_price)!)", for: .normal)
+            priceButton.setTitle("￥\((item?.goods_price) ?? "其他类型")", for: .normal)
         }
     }
     override func awakeFromNib() {

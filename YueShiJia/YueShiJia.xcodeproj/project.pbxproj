@@ -47,6 +47,7 @@
 		3CFB8E271ECAD62100DA3344 /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB8E261ECAD62100DA3344 /* UINavigationBarExtension.swift */; };
 		3CFB8E291ECAD69500DA3344 /* YFSpecialGoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB8E281ECAD69500DA3344 /* YFSpecialGoodsViewController.swift */; };
 		3CFB8E671ECB02A600DA3344 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB8E661ECB02A600DA3344 /* UIButtonExtension.swift */; };
+		3CFB8E691ECBF0E800DA3344 /* YFRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB8E681ECBF0E800DA3344 /* YFRefreshHeader.swift */; };
 		8CEDB485F8E3103D241B12EC /* Pods_YueShiJiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78DCA750933704DDB46B5C8 /* Pods_YueShiJiaUITests.framework */; };
 		C385B8AD09F2E0E62ED14A2A /* Pods_YueShiJiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E3BBDAB92B5EBB25305EED /* Pods_YueShiJiaTests.framework */; };
 		D16447A433731537E3D7C45F /* Pods_YueShiJia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110A0B2D1D08D9E8DF28A8D4 /* Pods_YueShiJia.framework */; };
@@ -119,6 +120,7 @@
 		3CFB8E261ECAD62100DA3344 /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		3CFB8E281ECAD69500DA3344 /* YFSpecialGoodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFSpecialGoodsViewController.swift; sourceTree = "<group>"; };
 		3CFB8E661ECB02A600DA3344 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		3CFB8E681ECBF0E800DA3344 /* YFRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFRefreshHeader.swift; sourceTree = "<group>"; };
 		3DB780B930276CFFB39DEDAA /* Pods-YueShiJiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YueShiJiaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YueShiJiaTests/Pods-YueShiJiaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5049084C3E1F5969640C8074 /* Pods-YueShiJiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YueShiJiaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YueShiJiaTests/Pods-YueShiJiaTests.release.xcconfig"; sourceTree = "<group>"; };
 		646DA04B87D7C2AE1D411804 /* Pods-YueShiJia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YueShiJia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YueShiJia/Pods-YueShiJia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				3CFB8E1F1EC999ED00DA3344 /* YFSpecailGoodsCell.xib */,
 				3CFB8E221ECAAD4A00DA3344 /* YFSpecialGoodsHeaderView.swift */,
 				3CFB8E241ECAAD5600DA3344 /* YFSpecialGoodsHeaderView.xib */,
+				3CFB8E681ECBF0E800DA3344 /* YFRefreshHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -756,6 +759,7 @@
 				3CFB8E271ECAD62100DA3344 /* UINavigationBarExtension.swift in Sources */,
 				3C31F8A51EC2F9D600FDAD11 /* YFSubjectViewController.swift in Sources */,
 				3C31F8A91EC2F9F100FDAD11 /* YFBasketViewController.swift in Sources */,
+				3CFB8E691ECBF0E800DA3344 /* YFRefreshHeader.swift in Sources */,
 				3C31F8AD1EC3F3FE00FDAD11 /* UIImage+Color.swift in Sources */,
 				3CC582111EC1A47500B5A176 /* ViewController.swift in Sources */,
 				3CFB8E201EC999ED00DA3344 /* YFSpecailGoodsCell.swift in Sources */,

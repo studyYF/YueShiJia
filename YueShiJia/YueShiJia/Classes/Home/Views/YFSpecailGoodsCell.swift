@@ -13,7 +13,7 @@ class YFSpecailGoodsCell: UITableViewCell {
     //MARK: 属性
     var item: Goods_List? {
         didSet{
-            iconImgv.kf.setImage(with: URL(string: (item?.goods_image_url)!))
+            iconImgv.kf.setImage(with: URL(string: (item?.goods_image_url)!),placeholder: UIImage(named: "bg_loding_defalut"))
             titleLabel.text = item?.goods_name
             descLabel.text = item?.goods_jingle
             originPriceLabel.text = "原价:￥\((item?.goods_marketprice)!)"

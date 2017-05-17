@@ -34,7 +34,7 @@ class YFHomeViewController: ViewController {
     var headItems = [YFHomeHeaderItem]()
     
     lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: kWidth, height: kHeight - kNavigationHeight), style: .grouped)
+        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: kWidth, height: kHeight - kNavigationHeight + 20), style: .grouped)
         tableView.backgroundColor = UIColor.white
         tableView.separatorStyle = .none
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -43,6 +43,8 @@ class YFHomeViewController: ViewController {
         tableView.register(UINib.init(nibName: typeTwoCell, bundle: nil), forCellReuseIdentifier: typeTwoCell)
         tableView.register(UINib.init(nibName: typeThreeCell, bundle: nil), forCellReuseIdentifier: typeThreeCell)
         tableView.register(UINib.init(nibName: headView, bundle: nil), forHeaderFooterViewReuseIdentifier: headView)
+        tableView.mj_header = YFRefreshHeader(refreshingTarget: self, refreshingAction: #selector(YFHomeViewController.refresh))
+        tableView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: #selector(YFHomeViewController.loadMore))
         return tableView
     }()
     
@@ -61,6 +63,21 @@ extension YFHomeViewController {
             self?.banners = result.1
             self?.items = result.0
             self?.headItems = result.2
+            self?.tableView.reloadData()
+            self?.tableView.mj_header.endRefreshing()
+        }
+    }
+    
+    @objc fileprivate func refresh() {
+        page = 1
+        loadData()
+    }
+    
+    @objc fileprivate func loadMore() {
+        page += 1
+        YFHttpRequest.shareInstance.loadHomeData(page) { [weak self] (result) in
+            self?.items.append(contentsOf: result.0)
+            self?.tableView.mj_footer.endRefreshing()
             self?.tableView.reloadData()
         }
     }
@@ -99,7 +116,7 @@ extension YFHomeViewController: UITableViewDelegate,UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: typeTwoCell, for: indexPath) as! YFHomeTypeTwoCell
             cell.item = items[indexPath.row]
             return cell
-        case "2":
+        case "2","1":
             let cell = tableView.dequeueReusableCell(withIdentifier: typeThreeCell, for: indexPath) as! YFHomeTypeThreeCell
             cell.item = items[indexPath.row]
             return cell
