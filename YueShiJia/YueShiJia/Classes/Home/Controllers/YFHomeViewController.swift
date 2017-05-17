@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MJRefresh
 
 private let typeOneCell = "YFHomeTypeOneCell"
 
@@ -92,6 +93,7 @@ extension YFHomeViewController: UITableViewDelegate,UITableViewDataSource {
         case "4":
             let cell = tableView.dequeueReusableCell(withIdentifier: typeOneCell, for: indexPath) as! YFHomeTypeOneCell
             cell.homeItem = items[indexPath.row]
+            cell.delegate = self
             return cell
         case "6":
             let cell = tableView.dequeueReusableCell(withIdentifier: typeTwoCell, for: indexPath) as! YFHomeTypeTwoCell
@@ -108,9 +110,18 @@ extension YFHomeViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: headView) as! YFHomeHeaderView
+        headerView.delegate = self
         headerView.imageItems = banners
         headerView.fourItems = headItems
         return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if items[indexPath.row].relation_object_type! == "4" {
+            let vc = YFSpecialGoodsViewController()
+            vc.special_id = items[indexPath.row].relation_object_id
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -118,3 +129,16 @@ extension YFHomeViewController: UITableViewDelegate,UITableViewDataSource {
     }
 }
 
+//MARK: YFHomeHeaderViewDelegate
+extension YFHomeViewController: YFHomeHeaderViewDelegate {
+    func advertiseSelected(_ index: Int) {
+        let vc = YFAdvetiseViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension YFHomeViewController: YFHomeTypeOneCellDelegate {
+    func seletcedSpecialGood(_ Index: Int) {
+        print("nihao")
+    }
+}

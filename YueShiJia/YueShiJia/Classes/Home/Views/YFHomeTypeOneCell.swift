@@ -11,16 +11,23 @@ import Kingfisher
 
 private let collectionCell = "YFItemCollectionCell"
 
+protocol YFHomeTypeOneCellDelegate {
+    func seletcedSpecialGood(_ Index: Int)
+}
+
 class YFHomeTypeOneCell: UITableViewCell {
 
     
     //MARK: 定义属性
+    
+    var delegate: YFHomeTypeOneCellDelegate?
     
     @IBOutlet weak var categoryImageView: UIImageView!
         
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var collectionHeightConstraints: NSLayoutConstraint!
+    
     
     var homeItem: YFHomeItem? {
         didSet {
@@ -46,6 +53,12 @@ extension YFHomeTypeOneCell: UICollectionViewDelegate, UICollectionViewDataSourc
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionCell, for: indexPath) as! YFItemCollectionCell
         cell.item = homeItem?.goods_special_list?[indexPath.item]
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let delegate = delegate {
+            delegate.seletcedSpecialGood(indexPath.item)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

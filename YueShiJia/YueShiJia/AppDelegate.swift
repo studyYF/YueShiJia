@@ -17,11 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window?.rootViewController = YFTabBarViewController()
         
-        
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
-        UINavigationBar.appearance().shadowImage = UIImage.imageWithColor(color: kColor)
         UINavigationBar.appearance().tintColor = kColor
-        UINavigationBar.appearance().barTintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: kColor]
         UITabBar.appearance().tintColor = kColor
 
         return true

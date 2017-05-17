@@ -11,8 +11,15 @@ import SDCycleScrollView
 import Kingfisher
 import SDWebImage
 
+
+protocol YFHomeHeaderViewDelegate {
+    func advertiseSelected(_ index: Int)
+}
+
 class YFHomeHeaderView: UITableViewHeaderFooterView {
     //MARK: 属性
+    
+    var delegate: YFHomeHeaderViewDelegate?
     
     /// 轮播图
     @IBOutlet weak var imageScrollView: SDCycleScrollView!
@@ -71,6 +78,8 @@ extension YFHomeHeaderView {
 // MARK: - SDCycleScrollViewDelegate
 extension YFHomeHeaderView: SDCycleScrollViewDelegate {
     func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didSelectItemAt index: Int) {
-        print("点击了\(index)")
+        if let delegate = delegate {
+            delegate.advertiseSelected(index)
+        }
     }
 }

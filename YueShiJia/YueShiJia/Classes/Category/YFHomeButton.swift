@@ -16,4 +16,6 @@ class YFHomeButton: UIButton {
         titleLabel?.frame = CGRect(x: 0, y: yfHeight * 0.5 + 5 * kRate, width: yfWidth, height: (titleLabel?.yfHeight)!)
         titleLabel?.textAlignment = .center
     }
+    
+    
 }

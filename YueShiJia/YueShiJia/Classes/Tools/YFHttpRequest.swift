@@ -9,6 +9,9 @@
 /**
  首页
  https://interface.yueshichina.com/?act=app&op=index1&app_id=1002&channel=APPSTORE&client=ios&curpage=1&imei=B2624433-81D9-4205-AF20-892FDBB80EE8&net_type=WIFI&page=10&push_id=4627676201928478325&req_time=1494315520869&token=&v=2.1.3&version=10.3.1
+轮播图详情
+ https://interface.yueshichina.com/?act=app&op=goods_special_new&app_id=1002&channel=APPSTORE&client=ios&imei=B2624433-81D9-4205-AF20-892FDBB80EE8&key=898774d9eee50eacaf72470122975d8b&net_type=WIFI&push_id=4627676201928478325&req_time=1494572577981&special_id=578&token=&v=2.1.3&version=10.3.1
+ 
  */
 
 
@@ -49,6 +52,11 @@ class YFHttpRequest {
     }
     
     
+    /// 获取首页数据
+    ///
+    /// - Parameters:
+    ///   - page: 页数
+    ///   - completion: 完成回调
     public func loadHomeData(_ page: Int, completion: @escaping (homeData) -> ()) {
         let url = "https://interface.yueshichina.com/?act=app&op=index1&app_id=1002&channel=APPSTORE&client=ios&curpage=\(page)&imei=B2624433-81D9-4205-AF20-892FDBB80EE8&net_type=WIFI&page=10&push_id=4627676201928478325&req_time=1494315520869&token=&v=2.1.3&version=10.3.1"
         baseRequest(url: url) { (response) in
@@ -82,6 +90,27 @@ class YFHttpRequest {
                     }
                 }
                 completion((homeItems, banners, headItems))
+            }
+        }
+    }
+    
+    
+    /// 请求专题详情
+    ///
+    /// - Parameters:
+    ///   - special_id: 专题id
+    ///   - completion: 返回专题数据
+    public func loadSpecialGoodsData(_ special_id: String, completion: @escaping(YFSpecialGoodsItem) -> ()) {
+        let url = "https://interface.yueshichina.com/?act=app&op=goods_special_new&app_id=1002&channel=APPSTORE&client=ios&imei=B2624433-81D9-4205-AF20-892FDBB80EE8&key=898774d9eee50eacaf72470122975d8b&net_type=WIFI&push_id=4627676201928478325&req_time=1494572577981&special_id=\(special_id)&token=&v=2.1.3&version=10.3.1"
+        baseRequest(url: url) { (response) in
+            let dict = JSON(response)
+            let code = dict["code"].intValue
+            guard code == kSuccessCode else {
+                SVProgressHUD.showError(withStatus: "请求失败")
+                return
+            }
+            if let dict = dict["datas"].dictionaryObject {
+                completion(YFSpecialGoodsItem(dict: dict))
             }
         }
     }
