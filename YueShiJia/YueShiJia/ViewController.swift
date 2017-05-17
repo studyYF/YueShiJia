@@ -31,6 +31,12 @@ class ViewController: UIViewController {
         button.addTarget(self, action: #selector(ViewController.searchAction), for: .touchUpInside)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
     }
+    
+    /// 设置导航栏分割线
+    func setNavigationSep() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+    }
 
 }
 
