@@ -35,4 +35,4 @@ let kLightColor = UIColor(red:0.97, green:0.95, blue:0.93, alpha:1.00)
 let kRate: CGFloat = kWidth / 375.00
 
 /// 专题分类高度
-let kSubjectHeaderHeight: CGFloat = 44
+let kSubjectHeaderHeight: CGFloat = 48

@@ -34,7 +34,7 @@ class YFListCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
-        imgvHeightConstraint.constant = 234 * kRate
+        imgvHeightConstraint.constant = 233.5 * kRate
         postBackView.layer.borderColor = kColor.cgColor
         postBackView.layer.borderWidth = 0.3
     }

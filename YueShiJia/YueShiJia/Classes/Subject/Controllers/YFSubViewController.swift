@@ -23,6 +23,8 @@ class YFSubViewController: UIViewController {
     
     var items = [YFSubjectItem]()
     
+    var activeItems = [YFActiveItem]()
+    
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: kWidth, height: kHeight - kNavigationHeight - kSubjectHeaderHeight - kToolBarHeight))
         tableView.backgroundColor = UIColor.white
@@ -55,7 +57,13 @@ class YFSubViewController: UIViewController {
 extension YFSubViewController {
     fileprivate func loadData() {
         YFHttpRequest.shareInstance.loadSubjectData(special_type!) { [weak self] (items) in
-            self?.items = items
+            switch (self?.special_type)! {
+            case "6":
+                self?.activeItems = items as! [YFActiveItem]
+                break
+            default:
+                self?.items = items as! [YFSubjectItem]
+            }
             self?.tableView.reloadData()
         }
     }
@@ -78,26 +86,31 @@ extension YFSubViewController {
 //MARK: UITableView代理方法
 extension YFSubViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        switch special_type! {
+        case "6":
+            return activeItems.count
+        default:
+            return items.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch special_type! {
         case "1":
             let cell = tableView.dequeueReusableCell(withIdentifier: videoCell, for: indexPath) as! YFVideoCell
-//            cell.homeItem = items[indexPath.row]
+            cell.item = items[indexPath.row]
             return cell
         case "2":
             let cell = tableView.dequeueReusableCell(withIdentifier: listCell, for: indexPath) as! YFListCell
             cell.item = items[indexPath.row]
             return cell
-        case "3":
-            let cell = tableView.dequeueReusableCell(withIdentifier: knowledgeCell, for: indexPath) as! YFKnowledgeCell
-//            cell.item = items[indexPath.row]
-            return cell
         case "4":
+            let cell = tableView.dequeueReusableCell(withIdentifier: knowledgeCell, for: indexPath) as! YFKnowledgeCell
+            cell.item = items[indexPath.row]
+            return cell
+        case "3":
             let cell = tableView.dequeueReusableCell(withIdentifier: humanismCell, for: indexPath) as! YFHumanismCell
-            //            cell.homeItem = items[indexPath.row]
+            cell.item = items[indexPath.row]
             return cell
         case "5":
             let cell = tableView.dequeueReusableCell(withIdentifier: mapCell, for: indexPath) as! YFMapCell
@@ -105,7 +118,7 @@ extension YFSubViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         case "6":
             let cell = tableView.dequeueReusableCell(withIdentifier: activeCell, for: indexPath) as! YFActiveCell
-            //            cell.item = items[indexPath.row]
+            cell.item = activeItems[indexPath.row]
             return cell
         default:
             return UITableViewCell()

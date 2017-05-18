@@ -88,7 +88,7 @@ extension YFSubjectViewController {
             vcArray.append(vc)
             //添加到scrollView上
             vc.view.frame = CGRect(x: i * kWidth, y: 0, width: kWidth, height: kHeight - kNavigationHeight - kSubjectHeaderHeight - kToolBarHeight)
-            vc.view.backgroundColor = UIColor(red: 4.4 * i, green: 30 * i, blue: 20 * i, alpha: 1)
+            vc.view.backgroundColor = UIColor.white
             scrollView.addSubview(vc.view)
             addChildViewController(vc)
             i += 1

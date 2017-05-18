@@ -63,6 +63,7 @@
 		3CFB8E861ECC30B000DA3344 /* YFActiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB8E841ECC30B000DA3344 /* YFActiveCell.swift */; };
 		3CFB8E871ECC30B000DA3344 /* YFActiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFB8E851ECC30B000DA3344 /* YFActiveCell.xib */; };
 		3CFB8E891ECC328300DA3344 /* YFSubjectItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB8E881ECC328300DA3344 /* YFSubjectItem.swift */; };
+		3CFB8E8B1ECD96E200DA3344 /* YFActiveItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB8E8A1ECD96E200DA3344 /* YFActiveItem.swift */; };
 		8CEDB485F8E3103D241B12EC /* Pods_YueShiJiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78DCA750933704DDB46B5C8 /* Pods_YueShiJiaUITests.framework */; };
 		C385B8AD09F2E0E62ED14A2A /* Pods_YueShiJiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E3BBDAB92B5EBB25305EED /* Pods_YueShiJiaTests.framework */; };
 		D16447A433731537E3D7C45F /* Pods_YueShiJia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110A0B2D1D08D9E8DF28A8D4 /* Pods_YueShiJia.framework */; };
@@ -151,6 +152,7 @@
 		3CFB8E841ECC30B000DA3344 /* YFActiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFActiveCell.swift; sourceTree = "<group>"; };
 		3CFB8E851ECC30B000DA3344 /* YFActiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFActiveCell.xib; sourceTree = "<group>"; };
 		3CFB8E881ECC328300DA3344 /* YFSubjectItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFSubjectItem.swift; sourceTree = "<group>"; };
+		3CFB8E8A1ECD96E200DA3344 /* YFActiveItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFActiveItem.swift; sourceTree = "<group>"; };
 		3DB780B930276CFFB39DEDAA /* Pods-YueShiJiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YueShiJiaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YueShiJiaTests/Pods-YueShiJiaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5049084C3E1F5969640C8074 /* Pods-YueShiJiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YueShiJiaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YueShiJiaTests/Pods-YueShiJiaTests.release.xcconfig"; sourceTree = "<group>"; };
 		646DA04B87D7C2AE1D411804 /* Pods-YueShiJia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YueShiJia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YueShiJia/Pods-YueShiJia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -450,6 +452,7 @@
 			isa = PBXGroup;
 			children = (
 				3CFB8E881ECC328300DA3344 /* YFSubjectItem.swift */,
+				3CFB8E8A1ECD96E200DA3344 /* YFActiveItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -828,6 +831,7 @@
 				3CFB8E291ECAD69500DA3344 /* YFSpecialGoodsViewController.swift in Sources */,
 				3C31F89F1EC2F97000FDAD11 /* YFNavigationController.swift in Sources */,
 				3C31F8D51EC45B2300FDAD11 /* YFHomeButton.swift in Sources */,
+				3CFB8E8B1ECD96E200DA3344 /* YFActiveItem.swift in Sources */,
 				3C31F8D21EC44CE100FDAD11 /* YFHomeTypeThreeCell.swift in Sources */,
 				3C31F8A31EC2F9C700FDAD11 /* YFHomeViewController.swift in Sources */,
 				3C31F8B01EC430D800FDAD11 /* YFHomeTypeOneCell.swift in Sources */,

@@ -120,7 +120,7 @@ class YFHttpRequest {
     /// - Parameters:
     ///   - special_type: 专题id
     ///   - completion: 返回专题数据
-    public func loadSubjectData(_ special_type: String, completion: @escaping ([YFSubjectItem]) -> ()) {
+    public func loadSubjectData(_ special_type: String, completion: @escaping ([NSObject]) -> ()) {
         let url = "https://interface.yueshichina.com/?act=app&op=special_programa&app_id=1002&channel=APPSTORE&client=ios&curpage=1&imei=B2624433-81D9-4205-AF20-892FDBB80EE8&key=898774d9eee50eacaf72470122975d8b&net_type=WIFI&page=10&push_id=4627676201928478325&req_time=1494992191249&special_type=\(special_type)&token=&v=2.1.3&version=10.3.1"
         baseRequest(url: url) { (response) in
             let data = JSON(response)
@@ -134,6 +134,13 @@ class YFHttpRequest {
                 var arr = [YFSubjectItem]()
                 for item in items {
                     arr.append(YFSubjectItem(dict: item as! [String : Any]))
+                }
+                completion(arr)
+            }
+            if let items = dict?["virtual"]?.arrayObject {
+                var arr = [YFActiveItem]()
+                for item in items {
+                    arr.append(YFActiveItem(dict: item as! [String : Any]))
                 }
                 completion(arr)
             }

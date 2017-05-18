@@ -28,6 +28,7 @@ class YFHomeTypeOneCell: UITableViewCell {
     
     @IBOutlet weak var collectionHeightConstraints: NSLayoutConstraint!
     
+    @IBOutlet weak var imgvHeightConstraint: NSLayoutConstraint!
     
     var homeItem: YFHomeItem? {
         didSet {
@@ -41,6 +42,7 @@ class YFHomeTypeOneCell: UITableViewCell {
         selectionStyle = .none
         collectionView.register(UINib.init(nibName: collectionCell, bundle: nil), forCellWithReuseIdentifier: collectionCell)
         collectionHeightConstraints.constant = 250.5 * kRate
+        imgvHeightConstraint.constant = 180 * kRate
     }
 }
 
@@ -70,7 +72,7 @@ extension YFHomeTypeOneCell: UICollectionViewDelegate, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(15 * kRate, 10 * kRate, 60 * kRate, 10 * kRate)
+        return UIEdgeInsetsMake(15 * kRate, 10 * kRate, 50.5 * kRate, 10 * kRate)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

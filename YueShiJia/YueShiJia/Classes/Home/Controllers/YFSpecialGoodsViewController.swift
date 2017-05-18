@@ -118,7 +118,6 @@ extension YFSpecialGoodsViewController: UITableViewDelegate, UITableViewDataSour
         let color = UIColor.white
         if scrollView.contentOffset.y > 50 {
             let alpha = 1 - (50 + 64 - scrollView.contentOffset.y) / 64
-            print(min(1, alpha))
             navigationController?.navigationBar.lt_setBackgroundColor(backgroundColor: color.withAlphaComponent(min(1, alpha)))
             navigationController?.navigationItem.titleView?.alpha = min(1, alpha)
         } else {

@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,7 +20,7 @@
                     <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zOQ-7o-zzm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="zOQ-7o-zzm" secondAttribute="height" multiplier="75:36" id="SXh-vg-ogI"/>
+                            <constraint firstAttribute="height" constant="180" id="MQC-Am-mde"/>
                         </constraints>
                     </imageView>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jdk-L0-eY4">
@@ -57,6 +56,7 @@
                 <outlet property="categoryImageView" destination="zOQ-7o-zzm" id="6WT-wx-tSB"/>
                 <outlet property="collectionHeightConstraints" destination="mev-IQ-5dL" id="AUd-zE-sVd"/>
                 <outlet property="collectionView" destination="jdk-L0-eY4" id="AkW-WK-lT7"/>
+                <outlet property="imgvHeightConstraint" destination="MQC-Am-mde" id="wZh-yn-R5g"/>
             </connections>
             <point key="canvasLocation" x="-76.5" y="1.5"/>
         </tableViewCell>
