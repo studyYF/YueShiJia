@@ -146,4 +146,44 @@ class YFHttpRequest {
             }
         }
     }
+    
+    /// 获取店铺数据
+    ///
+    /// - Parameter completion: 返回
+    public func loadShopData(_ completion: @escaping (ShopData) -> ()) {
+        let url = "https://interface.yueshichina.com/?act=goods_cms_special&op=cms_special&app_id=1002&channel=APPSTORE&client=ios&curpage=1&imei=B2624433-81D9-4205-AF20-892FDBB80EE8&key=898774d9eee50eacaf72470122975d8b&net_type=WIFI&push_id=4627676201928478325&req_time=1495435589585&token=&v=2.1.3&version=10.3.1"
+        baseRequest(url: url) { (response) in
+            let data = JSON(response)
+            let code = data["code"].intValue
+            guard code == kSuccessCode else {
+                SVProgressHUD.showInfo(withStatus: "")
+                return
+            }
+            if let dict = data["datas"].dictionary {
+                var shopArr = [YFShopItem]()
+                var bannerArr = [Banner]()
+                var classifyArr = [ClassifyItem]()
+                var channerItem: Channer?
+                if let shopItems = dict["query"]?.arrayObject {
+                    for item in shopItems {
+                        shopArr.append(YFShopItem(dict: item as! [String : Any]))
+                    }
+                }
+                if let bannerItems = dict["banner"]?.arrayObject {
+                    for item in bannerItems {
+                        bannerArr.append(Banner(dict: item as! [String : Any]))
+                    }
+                }
+                if let classifyItems = dict["tag_classify"]?.arrayObject {
+                    for item in classifyItems {
+                        classifyArr.append(ClassifyItem(dict: item as! [String : Any]))
+                    }
+                }
+                if let channer = dict["channel"]?.dictionaryObject {
+                    channerItem = Channer(dict: channer)
+                }
+                completion((shopArr,bannerArr,classifyArr,channerItem!))
+            }
+        }
+    }
 }

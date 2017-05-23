@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="YFShopHeaderView" id="iN0-l3-epB" customClass="YFShopHeaderView" customModule="YueShiJia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="411"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiE-v4-o0q" customClass="SDCycleScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="246.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0ue-F8-K0K">
+                    <rect key="frame" x="0.0" y="246.5" width="375" height="164.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e4U-Aa-4gF">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oiE-v4-o0q" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.6" id="5CP-Uo-gvw"/>
+                <constraint firstItem="0ue-F8-K0K" firstAttribute="top" secondItem="oiE-v4-o0q" secondAttribute="bottom" id="BEC-rv-DOF"/>
+                <constraint firstAttribute="bottom" secondItem="0ue-F8-K0K" secondAttribute="bottom" id="FOV-uD-pYd"/>
+                <constraint firstAttribute="trailing" secondItem="0ue-F8-K0K" secondAttribute="trailing" id="J0U-jT-Ean"/>
+                <constraint firstItem="oiE-v4-o0q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xai-1C-4yY"/>
+                <constraint firstItem="0ue-F8-K0K" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cUm-8B-IRM"/>
+                <constraint firstItem="oiE-v4-o0q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sMr-1q-WvD"/>
+                <constraint firstAttribute="trailing" secondItem="oiE-v4-o0q" secondAttribute="trailing" id="zAb-Wn-ip9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bannerView" destination="oiE-v4-o0q" id="fZx-ey-xB7"/>
+                <outlet property="collectionView" destination="0ue-F8-K0K" id="0JH-HV-8Pq"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="-58.5"/>
+        </view>
+    </objects>
+</document>
