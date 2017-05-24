@@ -16,6 +16,13 @@ class YFHomeButton: UIButton {
         titleLabel?.frame = CGRect(x: 0, y: yfHeight * 0.5 + 5 * kRate, width: yfWidth, height: (titleLabel?.yfHeight)!)
         titleLabel?.textAlignment = .center
     }
-    
-    
+}
+
+class YFProfileButton: UIButton {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        imageView?.frame = CGRect(x: yfWidth * 0.5 - 10 * kRate, y: yfHeight * 0.5 - 30 * kRate, width: 20 * kRate, height: 20 * kRate)
+        titleLabel?.frame = CGRect(x: 0, y: yfHeight * 0.5 + 5 * kRate, width: yfWidth, height: (titleLabel?.yfHeight)!)
+        titleLabel?.textAlignment = .center
+    }
 }

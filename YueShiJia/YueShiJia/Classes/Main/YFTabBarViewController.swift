@@ -22,7 +22,8 @@ class YFTabBarViewController: UITabBarController {
         addChildVC(vc: YFSubjectViewController(), title: "专题", image: "YS_pro_nor", selImage: "YS_pro_sel", tag: 101)
         addChildVC(vc: YFShopViewController(), title: "店铺", image: "YS_shop_nor", selImage: "YS_shop_sel", tag: 102)
         addChildVC(vc: YFBasketViewController(), title: "购物篮", image: "YS_car_nor", selImage: "YS_car_sel", tag: 103)
-        addChildVC(vc: YFProfileViewController(), title: "我", image: "YS_mine_nor", selImage: "YS_mine_sel", tag: 104)
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "YFProfileViewController")
+        addChildVC(vc: vc, title: "我", image: "YS_mine_nor", selImage: "YS_mine_sel", tag: 104)
     }
     
     

@@ -16,6 +16,16 @@
 		3C0C0AED1ED2E823000DAC09 /* YFShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C0AEB1ED2E823000DAC09 /* YFShopCell.xib */; };
 		3C0C0AF01ED3C1E4000DAC09 /* YFChannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C0AEE1ED3C1E4000DAC09 /* YFChannerCell.swift */; };
 		3C0C0AF11ED3C1E4000DAC09 /* YFChannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C0AEF1ED3C1E4000DAC09 /* YFChannerCell.xib */; };
+		3C0C0AF41ED3D5A1000DAC09 /* UIScrollView+HeaderScaleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C0AF31ED3D5A1000DAC09 /* UIScrollView+HeaderScaleImage.m */; };
+		3C0C0AFC1ED40FB3000DAC09 /* YFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C0AFB1ED40FB3000DAC09 /* YFProfileViewController.swift */; };
+		3C0C0B4E1ED52A11000DAC09 /* YFOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C0B4C1ED52A11000DAC09 /* YFOrderCell.swift */; };
+		3C0C0B4F1ED52A11000DAC09 /* YFOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C0B4D1ED52A11000DAC09 /* YFOrderCell.xib */; };
+		3C0C0B521ED52A22000DAC09 /* YFCountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C0B501ED52A22000DAC09 /* YFCountCell.swift */; };
+		3C0C0B531ED52A22000DAC09 /* YFCountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C0B511ED52A22000DAC09 /* YFCountCell.xib */; };
+		3C0C0B551ED55957000DAC09 /* YFOrderHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C0B541ED55957000DAC09 /* YFOrderHeaderView.swift */; };
+		3C0C0B571ED5596A000DAC09 /* YFCountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C0B561ED5596A000DAC09 /* YFCountHeaderView.swift */; };
+		3C0C0B591ED5597F000DAC09 /* YFOrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C0B581ED5597F000DAC09 /* YFOrderHeaderView.xib */; };
+		3C0C0B5B1ED55988000DAC09 /* YFCountHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C0B5A1ED55988000DAC09 /* YFCountHeaderView.xib */; };
 		3C31F8981EC1CAA100FDAD11 /* YFHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8971EC1CAA100FDAD11 /* YFHomeItem.swift */; };
 		3C31F89A1EC29CF100FDAD11 /* YFConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8991EC29CF100FDAD11 /* YFConst.swift */; };
 		3C31F89C1EC29E6400FDAD11 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F89B1EC29E6400FDAD11 /* Size.swift */; };
@@ -25,7 +35,6 @@
 		3C31F8A51EC2F9D600FDAD11 /* YFSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8A41EC2F9D600FDAD11 /* YFSubjectViewController.swift */; };
 		3C31F8A71EC2F9E100FDAD11 /* YFShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8A61EC2F9E100FDAD11 /* YFShopViewController.swift */; };
 		3C31F8A91EC2F9F100FDAD11 /* YFBasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8A81EC2F9F100FDAD11 /* YFBasketViewController.swift */; };
-		3C31F8AB1EC2F9FA00FDAD11 /* YFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8AA1EC2F9FA00FDAD11 /* YFProfileViewController.swift */; };
 		3C31F8AD1EC3F3FE00FDAD11 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8AC1EC3F3FE00FDAD11 /* UIImage+Color.swift */; };
 		3C31F8B01EC430D800FDAD11 /* YFHomeTypeOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31F8AE1EC430D800FDAD11 /* YFHomeTypeOneCell.swift */; };
 		3C31F8B11EC430D800FDAD11 /* YFHomeTypeOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C31F8AF1EC430D800FDAD11 /* YFHomeTypeOneCell.xib */; };
@@ -107,6 +116,17 @@
 		3C0C0AEB1ED2E823000DAC09 /* YFShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFShopCell.xib; sourceTree = "<group>"; };
 		3C0C0AEE1ED3C1E4000DAC09 /* YFChannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFChannerCell.swift; sourceTree = "<group>"; };
 		3C0C0AEF1ED3C1E4000DAC09 /* YFChannerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFChannerCell.xib; sourceTree = "<group>"; };
+		3C0C0AF21ED3D5A1000DAC09 /* UIScrollView+HeaderScaleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HeaderScaleImage.h"; sourceTree = "<group>"; };
+		3C0C0AF31ED3D5A1000DAC09 /* UIScrollView+HeaderScaleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HeaderScaleImage.m"; sourceTree = "<group>"; };
+		3C0C0AFB1ED40FB3000DAC09 /* YFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFProfileViewController.swift; sourceTree = "<group>"; };
+		3C0C0B4C1ED52A11000DAC09 /* YFOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFOrderCell.swift; sourceTree = "<group>"; };
+		3C0C0B4D1ED52A11000DAC09 /* YFOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFOrderCell.xib; sourceTree = "<group>"; };
+		3C0C0B501ED52A22000DAC09 /* YFCountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFCountCell.swift; sourceTree = "<group>"; };
+		3C0C0B511ED52A22000DAC09 /* YFCountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFCountCell.xib; sourceTree = "<group>"; };
+		3C0C0B541ED55957000DAC09 /* YFOrderHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFOrderHeaderView.swift; sourceTree = "<group>"; };
+		3C0C0B561ED5596A000DAC09 /* YFCountHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFCountHeaderView.swift; sourceTree = "<group>"; };
+		3C0C0B581ED5597F000DAC09 /* YFOrderHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFOrderHeaderView.xib; sourceTree = "<group>"; };
+		3C0C0B5A1ED55988000DAC09 /* YFCountHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFCountHeaderView.xib; sourceTree = "<group>"; };
 		3C31F8971EC1CAA100FDAD11 /* YFHomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFHomeItem.swift; sourceTree = "<group>"; };
 		3C31F8991EC29CF100FDAD11 /* YFConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFConst.swift; sourceTree = "<group>"; };
 		3C31F89B1EC29E6400FDAD11 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
@@ -116,7 +136,6 @@
 		3C31F8A41EC2F9D600FDAD11 /* YFSubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFSubjectViewController.swift; sourceTree = "<group>"; };
 		3C31F8A61EC2F9E100FDAD11 /* YFShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFShopViewController.swift; sourceTree = "<group>"; };
 		3C31F8A81EC2F9F100FDAD11 /* YFBasketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFBasketViewController.swift; sourceTree = "<group>"; };
-		3C31F8AA1EC2F9FA00FDAD11 /* YFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFProfileViewController.swift; sourceTree = "<group>"; };
 		3C31F8AC1EC3F3FE00FDAD11 /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		3C31F8AE1EC430D800FDAD11 /* YFHomeTypeOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFHomeTypeOneCell.swift; sourceTree = "<group>"; };
 		3C31F8AF1EC430D800FDAD11 /* YFHomeTypeOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFHomeTypeOneCell.xib; sourceTree = "<group>"; };
@@ -290,6 +309,8 @@
 		3CC5823F1EC1A8E700B5A176 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				3C0C0AF21ED3D5A1000DAC09 /* UIScrollView+HeaderScaleImage.h */,
+				3C0C0AF31ED3D5A1000DAC09 /* UIScrollView+HeaderScaleImage.m */,
 				3CFB8E261ECAD62100DA3344 /* UINavigationBarExtension.swift */,
 				3C31F89B1EC29E6400FDAD11 /* Size.swift */,
 				3C31F8AC1EC3F3FE00FDAD11 /* UIImage+Color.swift */,
@@ -364,7 +385,7 @@
 		3CC582451EC1A8E700B5A176 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3C31F8AA1EC2F9FA00FDAD11 /* YFProfileViewController.swift */,
+				3C0C0AFB1ED40FB3000DAC09 /* YFProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -379,6 +400,14 @@
 		3CC582471EC1A8E700B5A176 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3C0C0B4C1ED52A11000DAC09 /* YFOrderCell.swift */,
+				3C0C0B4D1ED52A11000DAC09 /* YFOrderCell.xib */,
+				3C0C0B501ED52A22000DAC09 /* YFCountCell.swift */,
+				3C0C0B511ED52A22000DAC09 /* YFCountCell.xib */,
+				3C0C0B541ED55957000DAC09 /* YFOrderHeaderView.swift */,
+				3C0C0B581ED5597F000DAC09 /* YFOrderHeaderView.xib */,
+				3C0C0B561ED5596A000DAC09 /* YFCountHeaderView.swift */,
+				3C0C0B5A1ED55988000DAC09 /* YFCountHeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -659,14 +688,18 @@
 				3C0C0AE51ED2CEFD000DAC09 /* YFShopHeaderView.xib in Resources */,
 				3C31F8C71EC4470A00FDAD11 /* YFHomeHeaderView.xib in Resources */,
 				3CFB8E211EC999ED00DA3344 /* YFSpecailGoodsCell.xib in Resources */,
+				3C0C0B591ED5597F000DAC09 /* YFOrderHeaderView.xib in Resources */,
 				3CFB8E831ECC308B00DA3344 /* YFHumanismCell.xib in Resources */,
 				3CFB8E251ECAAD5600DA3344 /* YFSpecialGoodsHeaderView.xib in Resources */,
 				3CFB8E7B1ECC305B00DA3344 /* YFMapCell.xib in Resources */,
 				3C31F8D31EC44CE100FDAD11 /* YFHomeTypeThreeCell.xib in Resources */,
+				3C0C0B5B1ED55988000DAC09 /* YFCountHeaderView.xib in Resources */,
 				3CFB8E731ECC302300DA3344 /* YFVideoCell.xib in Resources */,
+				3C0C0B531ED52A22000DAC09 /* YFCountCell.xib in Resources */,
 				3CC582191EC1A47500B5A176 /* LaunchScreen.storyboard in Resources */,
 				3C0C0AE91ED2D966000DAC09 /* YFShopClassifyCell.xib in Resources */,
 				3C0C0AED1ED2E823000DAC09 /* YFShopCell.xib in Resources */,
+				3C0C0B4F1ED52A11000DAC09 /* YFOrderCell.xib in Resources */,
 				3CC582161EC1A47500B5A176 /* Assets.xcassets in Resources */,
 				3C0C0AF11ED3C1E4000DAC09 /* YFChannerCell.xib in Resources */,
 				3C31F8B11EC430D800FDAD11 /* YFHomeTypeOneCell.xib in Resources */,
@@ -841,7 +874,6 @@
 				3C31F8A11EC2F97F00FDAD11 /* YFTabBarViewController.swift in Sources */,
 				3CFB8E6F1ECC261700DA3344 /* YFSubViewController.swift in Sources */,
 				3C31F8CE1EC44CC600FDAD11 /* YFHomeTypeTwoCell.swift in Sources */,
-				3C31F8AB1EC2F9FA00FDAD11 /* YFProfileViewController.swift in Sources */,
 				3CFB8E271ECAD62100DA3344 /* UINavigationBarExtension.swift in Sources */,
 				3C0C0AE31ED2CEE6000DAC09 /* YFShopHeaderView.swift in Sources */,
 				3CFB8E761ECC304600DA3344 /* YFListCell.swift in Sources */,
@@ -853,6 +885,7 @@
 				3C31F8AD1EC3F3FE00FDAD11 /* UIImage+Color.swift in Sources */,
 				3C0C0AE81ED2D966000DAC09 /* YFShopClassifyCell.swift in Sources */,
 				3CC582111EC1A47500B5A176 /* ViewController.swift in Sources */,
+				3C0C0AFC1ED40FB3000DAC09 /* YFProfileViewController.swift in Sources */,
 				3CFB8E201EC999ED00DA3344 /* YFSpecailGoodsCell.swift in Sources */,
 				3C31F8DB1EC59BCF00FDAD11 /* YFSpecialGoodsItem.swift in Sources */,
 				3CFB8E891ECC328300DA3344 /* YFSubjectItem.swift in Sources */,
@@ -860,12 +893,16 @@
 				3CFB8E7A1ECC305B00DA3344 /* YFMapCell.swift in Sources */,
 				3C0C0AEC1ED2E823000DAC09 /* YFShopCell.swift in Sources */,
 				3CFB8E6D1ECC1CFA00DA3344 /* YFSubjectHeaderView.swift in Sources */,
+				3C0C0B4E1ED52A11000DAC09 /* YFOrderCell.swift in Sources */,
 				3C31F8A71EC2F9E100FDAD11 /* YFShopViewController.swift in Sources */,
 				3C31F8BC1EC4311D00FDAD11 /* YFItemCollectionCell.swift in Sources */,
 				3C31F8BF1EC4313500FDAD11 /* YFHomeHeaderView.swift in Sources */,
 				3CFB8E231ECAAD4A00DA3344 /* YFSpecialGoodsHeaderView.swift in Sources */,
+				3C0C0B521ED52A22000DAC09 /* YFCountCell.swift in Sources */,
 				3CFB8E291ECAD69500DA3344 /* YFSpecialGoodsViewController.swift in Sources */,
+				3C0C0B551ED55957000DAC09 /* YFOrderHeaderView.swift in Sources */,
 				3C31F89F1EC2F97000FDAD11 /* YFNavigationController.swift in Sources */,
+				3C0C0AF41ED3D5A1000DAC09 /* UIScrollView+HeaderScaleImage.m in Sources */,
 				3C31F8D51EC45B2300FDAD11 /* YFHomeButton.swift in Sources */,
 				3CFB8E8B1ECD96E200DA3344 /* YFActiveItem.swift in Sources */,
 				3C31F8D21EC44CE100FDAD11 /* YFHomeTypeThreeCell.swift in Sources */,
@@ -879,6 +916,7 @@
 				3CFB8E861ECC30B000DA3344 /* YFActiveCell.swift in Sources */,
 				3C31F89C1EC29E6400FDAD11 /* Size.swift in Sources */,
 				3CC582561EC1A92600B5A176 /* YFHttpRequest.swift in Sources */,
+				3C0C0B571ED5596A000DAC09 /* YFCountHeaderView.swift in Sources */,
 				3CFB8E821ECC308B00DA3344 /* YFHumanismCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

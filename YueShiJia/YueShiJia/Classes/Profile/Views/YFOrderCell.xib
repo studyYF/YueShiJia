@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="YFOrderCell" selectionStyle="default" indentationWidth="10" rowHeight="126" id="KGk-i7-Jjw" customClass="YFOrderCell" customModule="YueShiJia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHM-UU-PLu" customClass="YFProfileButton" customModule="YueShiJia" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="12.5" width="94" height="100"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="待付款" image="mine_payment">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTY-5G-itZ" customClass="YFProfileButton" customModule="YueShiJia" customModuleProvider="target">
+                        <rect key="frame" x="94" y="12.5" width="94" height="100"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="待发货" image="mine_delivery">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMY-Hk-mRr" customClass="YFProfileButton" customModule="YueShiJia" customModuleProvider="target">
+                        <rect key="frame" x="188" y="12.5" width="94" height="100"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="待收货" image="mine_sendgoods">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9S3-GK-fyU" customClass="YFProfileButton" customModule="YueShiJia" customModuleProvider="target">
+                        <rect key="frame" x="281" y="12.5" width="94" height="100"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="退货" image="mine_refund">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9S3-GK-fyU" firstAttribute="width" secondItem="UHM-UU-PLu" secondAttribute="width" id="1tl-pr-G74"/>
+                    <constraint firstItem="UHM-UU-PLu" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="2TB-30-rB2"/>
+                    <constraint firstItem="fMY-Hk-mRr" firstAttribute="width" secondItem="UHM-UU-PLu" secondAttribute="width" id="2Uo-9Z-0hF"/>
+                    <constraint firstAttribute="trailing" secondItem="9S3-GK-fyU" secondAttribute="trailing" id="BDE-hp-cbw"/>
+                    <constraint firstItem="lTY-5G-itZ" firstAttribute="leading" secondItem="UHM-UU-PLu" secondAttribute="trailing" id="EDi-sh-VZm"/>
+                    <constraint firstItem="lTY-5G-itZ" firstAttribute="height" secondItem="UHM-UU-PLu" secondAttribute="height" id="Jpp-3g-g58"/>
+                    <constraint firstItem="UHM-UU-PLu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KVT-xc-ZvQ"/>
+                    <constraint firstItem="lTY-5G-itZ" firstAttribute="width" secondItem="UHM-UU-PLu" secondAttribute="width" id="KZg-cf-acV"/>
+                    <constraint firstItem="9S3-GK-fyU" firstAttribute="height" secondItem="UHM-UU-PLu" secondAttribute="height" id="NPT-5x-bgd"/>
+                    <constraint firstItem="fMY-Hk-mRr" firstAttribute="leading" secondItem="lTY-5G-itZ" secondAttribute="trailing" id="QWs-Hd-8KW"/>
+                    <constraint firstItem="fMY-Hk-mRr" firstAttribute="centerY" secondItem="UHM-UU-PLu" secondAttribute="centerY" id="Vb0-Pz-Rem"/>
+                    <constraint firstItem="UHM-UU-PLu" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="YGV-KW-64E"/>
+                    <constraint firstItem="fMY-Hk-mRr" firstAttribute="height" secondItem="UHM-UU-PLu" secondAttribute="height" id="eAH-H3-wCm"/>
+                    <constraint firstItem="lTY-5G-itZ" firstAttribute="centerY" secondItem="UHM-UU-PLu" secondAttribute="centerY" id="k6l-pk-Fha"/>
+                    <constraint firstItem="UHM-UU-PLu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="owd-Rh-EtQ"/>
+                    <constraint firstItem="9S3-GK-fyU" firstAttribute="centerY" secondItem="UHM-UU-PLu" secondAttribute="centerY" id="rgF-3E-aDO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="34" y="4"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mine_delivery" width="19" height="19"/>
+        <image name="mine_payment" width="19" height="19"/>
+        <image name="mine_refund" width="19" height="19"/>
+        <image name="mine_sendgoods" width="19" height="19"/>
+    </resources>
+</document>

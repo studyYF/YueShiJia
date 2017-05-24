@@ -16,7 +16,7 @@ class YFBasketViewController: ViewController {
     //MARK: 生命周期函数
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUI()
     }
 }
 
@@ -27,7 +27,9 @@ extension YFBasketViewController {
 
 //MARK: 设置UI
 extension YFBasketViewController {
-    
+    fileprivate func setUI() {
+        title = "购物篮"
+    }
 }
 
 //MARK: 方法

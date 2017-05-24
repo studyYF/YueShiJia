@@ -6,5 +6,9 @@
 //  Copyright © 2017年 YangFan. All rights reserved.
 //
 
+
 //#import "SDCycleScrollView.h"
+
+#import "UIScrollView+HeaderScaleImage.h"
+
 
